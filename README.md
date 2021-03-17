@@ -1,6 +1,6 @@
 # Data Analysis for Marketing
 
-This repository includes Python code and SQL queries that allow me to conduct thorough marketing analysis for a SaaS company.
+This repository includes Python code and SQL queries for marketing analysis for a SaaS company.
 This includes, but not limited to:
 
 * Bounced leads analysis
