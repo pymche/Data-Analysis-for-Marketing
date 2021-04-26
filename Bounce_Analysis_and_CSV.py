@@ -8,16 +8,11 @@ import seaborn as sns
 import csv
 
 
-# Importing data
-
-bounce = pd.read_csv('campaign_bounces_20200315.csv')
-crm = pd.read_csv('Leads_001.csv')
+bounce = pd.read_csv('/Users/melaniecheung/Desktop/Coding_Projects/Work/Analysis/Bounce/campaign_bounces_20200315.csv')
+crm = pd.read_csv('/Users/melaniecheung/Desktop/Coding_Projects/Work/Data/Leads_001.csv')
 
 
 print(bounce.shape, crm.shape)
-
-
-# Querying and tidying data
 
 
 bounce['Company'] = bounce['Company Name']
@@ -44,9 +39,6 @@ df['Created Time'] = df['Created Time'].dt.strftime('%Y-%m')
 
 
 df['Created Time']
-
-
-# Plotting data
 
 
 sns.set_style("whitegrid")
@@ -86,7 +78,7 @@ print('Number of bounces in total (active contacts)')
 df.shape[0]
 
 
-### Excluding the ones that have entered Tier 1 Generic Email Campaign
+### Excluding the ones that have entered Tier 1 Generic
 tier1 = df['Enter Workflow_y'] != 'Tier 1 Generic'
 
 
